@@ -1,0 +1,8 @@
+aiocoap==0.4.5
+influxdb_client==1.36.1
+numpy==1.25.1
+paho_mqtt==1.6.1
+pandas==2.0.3
+pyTelegramBotAPI==4.12.0
+pyTelegramBotAPI==4.12.0
+statsmodels==0.14.0
