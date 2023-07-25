@@ -19,6 +19,20 @@ The proxy module runs the CoAP server that the ESP32 sketch connects to. This se
 
 To setup the proxy module, fill the `constants.py` with your credentials. You might need to create your own InfluxDB instance for that. Install the `requirements.txt` Finally, run the script.
 
+## API
+
+### `/config`
+
+- forwards config change to ESP32 unit
+
+POST (Bytes)
+
+`sampling_rate, calibration, alarm_level, alarm_counter`
+
+```
+Number, Number, Number, Number
+```
+
 # Prediction
 
 The prediction module has three pairs of functions. Each function pair either uses only the weight or the weight, temperature, and humidity for its forecast. The function pairs consist of: inserting forecast for the next 24 hours into your forecast bucket of your InfluxDB instance, predicting the amount of time left until the next alarm is raised, and the mean squared error of each forecast.
