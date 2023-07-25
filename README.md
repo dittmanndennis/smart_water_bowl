@@ -1,6 +1,6 @@
 # Smart Water Bowl
 
-This consists of the software to create a smart water bowl that alerts you on the occurence of low water levels. The software provided for this is our proxy module and ESP32 sketch. Furtheremore, this repository inhabits a prediction module that can forecast future water levels based on weight, temperature, and humidity.
+This repository consists of the software to create a smart water bowl that alerts you on the occurence of low water levels. The software provided for this is our proxy module and ESP32 sketch. Furtheremore, this repository inhabits a prediction module that can forecast future water levels based on weight, temperature, and humidity.
 
 # ESP32
 
