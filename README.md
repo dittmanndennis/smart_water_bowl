@@ -11,6 +11,11 @@ First, a wifi connection is established. Then, the controller subscribes to the 
 
 The Micropython files in the ESP32 folder should be copied entirely onto your ESP32 unit. Be aware that you need to alter the global variables in the `boot.py` file according to your environment. Finally, RST your ESP32 unit.
 
+## Sensors
+
+- load cell + HX711
+- humidity & temperature sensor (e.g. DHT11/DHT22)
+
 # Proxy
 
 The proxy module runs the CoAP server that the ESP32 sketch connects to. This server has two endpoints. One that forwards the sensor readings to your InfluxDB instance and a second one that initiates configuration changes. Furthermore, the proxy module also manages a Telegram bot. This  bot sends out alarms to subscribed users, if the water level gets to low. Additionally, this bot can receive and forward configuration changes to the ESP32 controller.
