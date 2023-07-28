@@ -1,6 +1,5 @@
 import logging
 import asyncio
-import datetime
 
 from constants import INFLUXDB, MQTT_BROKER, TELEGRAM_BOT
 
@@ -8,7 +7,6 @@ import aiocoap
 import aiocoap.resource as resource
 import paho.mqtt.client as mqtt_client
 from influxdb_client import InfluxDBClient
-from influxdb_client.client.influxdb_client_async import InfluxDBClientAsync
 from telebot.async_telebot import AsyncTeleBot
 
 
