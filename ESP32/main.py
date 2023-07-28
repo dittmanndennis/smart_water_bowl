@@ -26,8 +26,7 @@ for i in range(100):
     value += weight_sensor.get_value()
 value = value/100
 print("Weight: ", value)
-# 1580g = weight of 1.5l water bottle, ADJUST to YOUR measurement unit!!!
-weight_sensor.set_scale(value/1580)
+weight_sensor.set_scale(value/_known_weight)
 
 
 # Logic

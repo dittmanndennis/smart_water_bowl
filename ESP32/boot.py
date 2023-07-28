@@ -30,6 +30,8 @@ _calibration = 0.0
 _alarm_level = 200.0
 _alarm_counter = 3.0
 
+# 1580g = weight of 1.5l water bottle, ADJUST to YOUR measurement unit!!!
+_known_weight = 1580
 _last_sample = 0
 _alarms = 0
 _coap_latency = []
